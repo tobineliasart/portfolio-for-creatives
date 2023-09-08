@@ -70,7 +70,7 @@ html {
 
 :root {
   --body-typeface: 'Glegoo', serif;
-  --heading-typeface: 'Glegoo', serif, 700;
+  --heading-typeface: 'Glegoo', serif;
   --project-title-typeface: 'Glegoo', serif;
   --background-color: #fdfdfd;
   --background-color-about: #f5f5f5;
@@ -147,6 +147,7 @@ svg {
 h1 {
   font-size: 2rem;
   font-family: var(--heading-typeface);
+  font-weight: 700;
   margin-bottom: 1rem;
   color: var(--h1-color);
 }
