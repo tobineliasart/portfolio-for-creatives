@@ -83,7 +83,7 @@ html {
   --h4-color: #5200ff;
   --h5-color: #5200ff;
   --h6-color: #5200ff;
-  --primary-text-color: #222;
+  --primary-text-color: #242424;
   --holding-page-title-color: #ebedf0;
   --accent-color: #5200ff;
   --overlay-color: #5200ff;
@@ -147,7 +147,7 @@ svg {
 h1 {
   font-size: 2rem;
   font-family: var(--heading-typeface);
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 1rem;
   color: var(--h1-color);
 }
@@ -155,6 +155,7 @@ h1 {
 h2 {
   font-size: 2.25rem;
   font-family: var(--heading-typeface);
+  font-weight: 700;
   margin-bottom: 1rem;
   color: var(--h2-color);
 }
