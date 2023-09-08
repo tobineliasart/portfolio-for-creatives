@@ -70,7 +70,7 @@ html {
 
 :root {
   --body-typeface: 'Glegoo', serif;
-  --heading-typeface: 'Glegoo', serif;
+  --heading-typeface: 'Glegoo', serif, 700;
   --project-title-typeface: 'Glegoo', serif;
   --background-color: #fdfdfd;
   --background-color-about: #f5f5f5;
