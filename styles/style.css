@@ -94,8 +94,8 @@ html {
   --hover-color: #FF9A84;
   --visited-color: #5200ff;
   --project-title-color: #5200ff;
-  --project-sidebar-background-color: orangered;
-  --project-sidebar-text-color: white;
+  --project-sidebar-background-color: transparent;
+  --project-sidebar-text-color: #242424;
   --heart-color: darkred;
   --holding-page-footer-color: #f8f8ff;
   --text-selection-background-color: #5200ff;
@@ -218,8 +218,8 @@ em {
 .overlay-description {
   color: var(--overlay-description-color);
 }
-
-
+.cls-1 {fill:#A1F7F4;}
+.cls-2 {fill:#5200ff;}
 /* Hyperlink Styles */
 
 a:link {
@@ -329,7 +329,7 @@ a:active {
 }
 
 .logo {
-  width: 3rem;
+  width: 6rem;
 }
 
 .hero-headline-wrapper {
@@ -583,11 +583,6 @@ a:active {
 .project-details {
   width: 100%;
   padding: 1rem;
-  /* Delete the following if you do not want a gradient background on the project page */
-  background-image: linear-gradient(-225deg,
-      var(--linear-gradient-color-1) 0%,
-      var(--linear-gradient-color-2) 50%,
-      var(--linear-gradient-color-3) 100%);
 }
 
 
@@ -845,7 +840,7 @@ a.sub-navigation-link:hover {
   }
 
   .logo {
-    width: 5rem;
+    width: 6rem;
   }
 
   .hero {
@@ -857,7 +852,7 @@ a.sub-navigation-link:hover {
   }
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     grid-gap: 1rem;
   }
 
@@ -982,4 +977,11 @@ a.sub-navigation-link:hover {
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    grid-gap: 1rem;
+  }
+}
