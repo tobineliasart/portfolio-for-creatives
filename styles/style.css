@@ -384,7 +384,7 @@ a:active {
 /* Padding around work grid and project page */
 .portfolio,
 .project-wrapper {
-  padding: 0.25rem;
+  padding: 2rem;
 }
 
 /* Defining the work page grid */
@@ -898,7 +898,7 @@ a.sub-navigation-link:hover {
   /* Padding around work grid and project page */
   .portfolio,
   .project-wrapper {
-    padding: 0.5rem;
+    padding: 2rem;
   }
 
   /* Project Page Flex Direction on Large Devices */
