@@ -96,7 +96,6 @@ html {
   --project-title-color: #242424;
   --project-sidebar-background-color: transparent;
   --project-sidebar-text-color: #242424;
-  --heart-color: darkred;
   --holding-page-footer-color: #f8f8ff;
   --text-selection-background-color: #5a3072;
   --linear-gradient-color-1: #ff057c;
@@ -278,13 +277,18 @@ a:active {
 }
 
 .custom-navigation {
-  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 48px;
+  background-color: #ffffff;
+  border: 2px solid black;
+  box-shadow: 5px 5px #dcd9d0;
 }
+
 .custom-navigation:hover {
-  background: url(assets/temp/heading-background.svg);
-  background-size: 15%;
-  background-repeat: no-repeat;
-  background-position: center center;
+  box-shadow: 5px 5px pink;
 }
 
 .footer-nav-list {
@@ -333,7 +337,7 @@ a:active {
 */
 
 .hero {
-  min-height: 40vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
 }
@@ -347,7 +351,7 @@ a:active {
 }
 
 .logo {
-  width: 1.25rem;
+  width: 2rem;
 }
 
 .hero-headline-wrapper {
@@ -378,35 +382,34 @@ a:active {
   padding: 1rem;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: "Montserrat Alternates", sans-serif;
-  color: #242424;
-}
+
 .container {
-  height: 100vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .container p {
-  font-size: 3rem;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1.5rem;
   padding: 0.5rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
   text-align: center;
   overflow: hidden;
 }
+
 .container p span.typed-text {
   font-weight: normal;
   color: #ff9a84;
 }
+
 .container p span.cursor {
   display: inline-block;
   background-color: #ccc;
@@ -414,9 +417,11 @@ body {
   width: 3px;
   animation: blink 1s infinite;
 }
+
 .container p span.cursor.typing {
   animation: none;
 }
+
 @keyframes blink {
   0% {
     background-color: #ccc;
@@ -878,6 +883,14 @@ a.sub-navigation-link:hover {
     padding: 4rem 8rem;
   }
 
+  .container p {
+    font-size: 3rem;
+  }
+
+  .container {
+    height: 80vh;
+  }
+
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
     grid-gap: 1rem;
@@ -982,7 +995,7 @@ a.sub-navigation-link:hover {
 
 @media (min-width: 1600px) {
   body {
-    background: red;
+    background: rgb(255, 255, 255);
   }
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
