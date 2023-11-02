@@ -142,7 +142,9 @@ svg {
 */
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 1.25px;
   font-family: var(--heading-typeface);
   font-weight: 700;
   margin-bottom: 1rem;
@@ -193,7 +195,7 @@ em {
 }
 
 .hero-headline {
-  color: var(--overlay-color);
+  color: var(--hover-color);
 }
 
 .project-title {
@@ -331,7 +333,7 @@ a:active {
 */
 
 .hero {
-  min-height: 50vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
 }
@@ -345,7 +347,7 @@ a:active {
 }
 
 .logo {
-  width: 1.75rem;
+  width: 1.25rem;
 }
 
 .hero-headline-wrapper {
@@ -354,8 +356,8 @@ a:active {
   flex: 1;
   align-items: center;
   justify-content: center;
-  padding: 3rem;
-  text-align: left;
+  padding: 2rem;
+  text-align: center;
 }
 
 .hero-icon {
@@ -374,6 +376,63 @@ a:active {
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #242424;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container p span.typed-text {
+  font-weight: normal;
+  color: #ff9a84;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
 }
 
 /* Work Page Layout
