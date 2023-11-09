@@ -239,7 +239,7 @@ a:link {
 }
 
 a:visited {
-  color: var(--visited-color);
+  color: var(--primary-text-color);
 }
 
 a:hover {
@@ -299,11 +299,11 @@ a:active {
 }
 
 .custom-navigation:hover {
-  box-shadow: -5px 5px pink;
+  box-shadow: -5px 5px #ff9a84;
 }
 
 .custom-navigation-work:hover {
-  box-shadow: -5px 5px pink;
+  box-shadow: -5px 5px #ff9a84;
 }
 
 .footer-nav-list {
@@ -352,7 +352,7 @@ a:active {
 */
 
 .hero {
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
 }
@@ -403,14 +403,15 @@ a:active {
   box-sizing: border-box;
 }
 
-.container {
+.hero-container {
   height: 50vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }
 
-.container p {
+.hero-name {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 1.5rem;
   padding: 0.5rem;
@@ -418,14 +419,22 @@ a:active {
   letter-spacing: 0.1rem;
   text-align: center;
   overflow: hidden;
-}
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-.container p span.typed-text {
+  width: 100%;
+}
+.hero-heading {display: block;}
+.hero-name span.typed-text {
   font-weight: normal;
   color: #ff9a84;
 }
 
-.container p span.cursor {
+.typed-text-wrapper {}
+.hero-name span.cursor {
   display: inline-block;
   background-color: #ccc;
   margin-left: 0.1rem;
@@ -433,9 +442,12 @@ a:active {
   animation: blink 1s infinite;
 }
 
-.container p span.cursor.typing {
+.hero-name span.cursor.typing {
   animation: none;
 }
+
+#eCl2gNp0Mfh1 {fill: #dcd9d0;}
+#eCl2gNp0Mfh1:hover {fill:#ff9a84;}
 
 @keyframes blink {
   0% {
@@ -453,6 +465,10 @@ a:active {
   100% {
     background-color: #ccc;
   }
+}
+
+.arrow-to-work {
+  width: 2rem;
 }
 
 /* Work Page Layout
@@ -483,6 +499,17 @@ a:active {
   grid-row-gap: 20vw;
   grid-column-gap: 12px;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
+}
+
+.work-title-1 {
+  font-family: Montserrat Alternates, sans-serif;
+  font-weight: 800;
+  font-size: 3.25rem;
+  text-shadow: -5px 5px #ff9a84;
+  color: #242424;
+  position: relative;
+  top: 65%;
+  left: 40%;
 }
 
 .work-page-grid-item-1 {
@@ -557,20 +584,6 @@ a:active {
   grid-column-end: 4;
   grid-row-start: 9;
 }
-
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(20vh);
-  visibility: hidden;
-  transition: opacity 1200ms ease-out, transform 600ms ease-out,
-    visibility 1200ms ease-out;
-  will-change: opacity, transform, visibility;
-}
-.fade-in-section.is-visible {
-  opacity: 1;
-  transform: none;
-  visibility: visible;
-}
 /* Overlay */
 .overlay {
   position: absolute;
@@ -594,6 +607,22 @@ a:active {
 .work-page-grid-item:hover .overlay {
   visibility: visible;
   opacity: 0.8;
+}
+
+/* Scroll in fade test styles */
+
+.tag {
+}
+
+.tag {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 /* 
@@ -979,12 +1008,16 @@ a.sub-navigation-link:hover {
     padding: 4rem 8rem;
   }
 
-  .container p {
+  .hero-name {
     font-size: 3rem;
   }
 
-  .container {
-    height: 80vh;
+  .hero-container {
+    height: 90vh;
+  }
+
+  .arrow-to-work {
+    width: 3.5rem;
   }
 
   /* Grayscale filter with full-colour on hover and tap */
