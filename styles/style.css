@@ -247,7 +247,7 @@ a:hover {
 }
 
 a:focus {
-  outline: 1px solid var(--accent-color);
+  outline: none;
 }
 
 a:active {
@@ -341,6 +341,7 @@ a:active {
   margin-left: 1.2rem;
 }
 
+
 /* Hero 
 
 ██   ██ ███████ ██████   ██████  
@@ -352,16 +353,26 @@ a:active {
 */
 
 .hero {
-  min-height: 60vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
+}
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 85px;
+  background-color:#ffffff;
 }
 
 .branding-navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 2rem 4rem;
   align-items: center;
 }
 
@@ -404,7 +415,7 @@ a:active {
 }
 
 .hero-container {
-  height: 50vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -413,7 +424,7 @@ a:active {
 
 .hero-name {
   font-family: "Montserrat Alternates", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 0.5rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
@@ -468,7 +479,7 @@ a:active {
 }
 
 .arrow-to-work {
-  width: 2rem;
+  width: 2.5rem;
 }
 
 /* Work Page Layout
@@ -490,7 +501,7 @@ a:active {
 /* Padding around work grid and project page */
 .portfolio,
 .project-wrapper {
-  padding: 0rem 1.5rem;
+  padding: 5rem 1.5rem;
 }
 
 /* Defining the work page grid */
@@ -498,7 +509,7 @@ a:active {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(9, 1fr);
-  grid-row-gap: 20vw;
+  grid-row-gap: 10vw;
   grid-column-gap: 12px;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
@@ -1003,7 +1014,7 @@ a.sub-navigation-link:hover {
   }
 
   .hero {
-    min-height: 70vh;
+    min-height: 80vh;
   }
 
   .hero-headline-wrapper {
@@ -1067,7 +1078,7 @@ a.sub-navigation-link:hover {
   /* Padding around work grid and project page */
   .portfolio,
   .project-wrapper {
-    padding: 1rem;
+    padding: 5rem 1rem;
   }
 
   /* Project Page Flex Direction on Large Devices */
@@ -1109,7 +1120,7 @@ a.sub-navigation-link:hover {
 
 @media (min-width: 1200px) {
   body {
-    background: salmon;
+    background: rgb(193, 247, 255);
   }
 }
 
@@ -1117,6 +1128,6 @@ a.sub-navigation-link:hover {
 
 @media (min-width: 1600px) {
   body {
-    background: rgb(255, 255, 255);
+    background: rgb(255, 223, 223);
   }
 }
