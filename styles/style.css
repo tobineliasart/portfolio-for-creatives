@@ -990,6 +990,10 @@ a.sub-navigation-link:hover {
 @media (min-width: 768px) {
 }
 
+.logo {
+  width: 6rem;
+}
+
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
@@ -1010,7 +1014,7 @@ a.sub-navigation-link:hover {
   }
 
   .logo {
-    width: 2rem;
+    width: 6rem;
   }
 
   .hero {
@@ -1120,7 +1124,7 @@ a.sub-navigation-link:hover {
 
 @media (min-width: 1200px) {
   body {
-    background: rgb(193, 247, 255);
+    background: rgb(255, 255, 255);
   }
 }
 
@@ -1128,6 +1132,6 @@ a.sub-navigation-link:hover {
 
 @media (min-width: 1600px) {
   body {
-    background: rgb(255, 223, 223);
+    background: rgb(255, 255, 255);
   }
 }
