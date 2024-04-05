@@ -72,32 +72,32 @@ html {
   --body-typeface: "Glegoo", serif;
   --heading-typeface: "Montserrat Alternates", sans-serif;
   --project-title-typeface: "Montserrat Alternates", sans-serif;
-  --background-color: #ffffff;
+  --background-color: #FEFAF3;
   --background-color-about: #ffffff;
   --background-color-footer: #ffffff;
   --alt-background-color: #000000;
   --background-color-holding-page: #ffffff;
-  --h1-color: #242424;
-  --h2-color: #242424;
-  --h3-color: #5a3072;
+  --h1-color: #1A272F;
+  --h2-color: #1A272F;
+  --h3-color: #1A272F;
   --h4-color: #dcd9d0;
-  --h5-color: #242424;
+  --h5-color: #1A272F;
   --h6-color: #ffffff;
-  --primary-text-color: #242424;
-  --holding-page-title-color: #242424;
-  --accent-color: #ff9a84;
-  --overlay-color: #242424;
+  --primary-text-color: #1A272F;
+  --holding-page-title-color: #1A272F;
+  --accent-color: #8C83BA;
+  --overlay-color: #1A272F;
   --overlay-title-color: #ffffff;
   --overlay-description-color: #ffffff;
-  --hyperlink-color: #242424;
+  --hyperlink-color: #1A272F;
   --hyperlink-alternate-color: orangered;
-  --hover-color: #ff9a84;
-  --visited-color: #ff9a84;
-  --project-title-color: #242424;
+  --hover-color: #8C83BA;
+  --visited-color: #8C83BA;
+  --project-title-color: #1A272F;
   --project-sidebar-background-color: transparent;
-  --project-sidebar-text-color: #242424;
+  --project-sidebar-text-color: #1A272F;
   --holding-page-footer-color: #f8f8ff;
-  --text-selection-background-color: #5a3072;
+  --text-selection-background-color: #8C83BA;
   --linear-gradient-color-1: #ff057c;
   --linear-gradient-color-2: #8d0b93;
   --linear-gradient-color-3: #242424;
@@ -285,7 +285,7 @@ a:active {
   width: 80px;
   height: 42px;
   background-color: #ffffff;
-  border: 2px solid black;
+  border: 2px solid #1A272F;
   box-shadow: -5px 5px #dcd9d0;
 }
 
@@ -296,16 +296,16 @@ a:active {
   width: 80px;
   height: 42px;
   background-color: #ffffff;
-  border: 2px solid black;
+  border: 2px solid #1A272F;
   box-shadow: -5px 5px #dcd9d0;
 }
 
 .custom-navigation:hover {
-  box-shadow: -5px 5px #ff9a84;
+  box-shadow: -5px 5px #8C83BA;
 }
 
 .custom-navigation-work:hover {
-  box-shadow: -5px 5px #ff9a84;
+  box-shadow: -5px 5px #8C83BA;
 }
 
 .footer-nav-list {
@@ -345,12 +345,12 @@ a:active {
   width: auto;
   height: auto;
   background-color: #ffffff;
-  border: 2px solid black;
+  border: 2px solid #1A272F;
   box-shadow: -5px 5px #dcd9d0;
 }
 
 .custom-navigation-email:hover {
-  box-shadow: -5px 5px #ff9a84;
+  box-shadow: -5px 5px #8C83BA;
 }
 
 .footer-email {
@@ -469,7 +469,7 @@ a:active {
 .hero-heading {display: block;}
 .hero-name span.typed-text {
   font-weight: normal;
-  color: #ff9a84;
+  color: #8C83BA;
 }
 
 .typed-text-wrapper {}
@@ -485,8 +485,8 @@ a:active {
   animation: none;
 }
 
-#eCl2gNp0Mfh1 {fill: #dcd9d0;}
-#eCl2gNp0Mfh1:hover {fill:#ff9a84;}
+#eCl2gNp0Mfh1 {fill: #1A272F;}
+#eCl2gNp0Mfh1:hover {fill:#8C83BA;}
 
 @keyframes blink {
   0% {
@@ -546,8 +546,8 @@ a:active {
   font-family: Montserrat Alternates, sans-serif;
   font-weight: 800;
   font-size: 3.25rem;
-  text-shadow: -5px 5px #ff9a84;
-  color: #242424;
+  text-shadow: -5px 5px #8C83BA;
+  color: #1A272F;
   position: relative;
   top: 65%;
   left: 40%;
@@ -1162,7 +1162,7 @@ a.sub-navigation-link:hover {
 
 @media (min-width: 1200px) {
   body {
-    background: rgb(255, 255, 255);
+    background: #FEFAF3;
   }
 }
 
@@ -1170,6 +1170,6 @@ a.sub-navigation-link:hover {
 
 @media (min-width: 1600px) {
   body {
-    background: rgb(255, 255, 255);
+    background: #FEFAF3;
   }
 }
