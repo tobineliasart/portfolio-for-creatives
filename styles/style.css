@@ -73,10 +73,10 @@ html {
   --heading-typeface: "Montserrat Alternates", sans-serif;
   --project-title-typeface: "Montserrat Alternates", sans-serif;
   --background-color: #FEFAF3;
-  --background-color-about: #ffffff;
-  --background-color-footer: #ffffff;
+  --background-color-about: #FEFAF3;
+  --background-color-footer: #FEFAF3;
   --alt-background-color: #000000;
-  --background-color-holding-page: #ffffff;
+  --background-color-holding-page: #FEFAF3;
   --h1-color: #1A272F;
   --h2-color: #1A272F;
   --h3-color: #1A272F;
@@ -86,7 +86,7 @@ html {
   --primary-text-color: #1A272F;
   --holding-page-title-color: #1A272F;
   --accent-color: #8C83BA;
-  --overlay-color: #1A272F;
+  --overlay-color: #8C83BA;
   --overlay-title-color: #ffffff;
   --overlay-description-color: #ffffff;
   --hyperlink-color: #1A272F;
@@ -258,7 +258,7 @@ a:active {
 }
 
 .navigation-arrow {
-  color: var(--alt-background-color);
+  color: var(--accent-color);
 }
 
 .navigation-arrow:link {
@@ -284,7 +284,7 @@ a:active {
   justify-content: center;
   width: 80px;
   height: 42px;
-  background-color: #ffffff;
+  background-color: #FEFAF3;
   border: 2px solid #1A272F;
   box-shadow: -5px 5px #dcd9d0;
 }
@@ -295,7 +295,7 @@ a:active {
   justify-content: center;
   width: 80px;
   height: 42px;
-  background-color: #ffffff;
+  background-color: #FEFAF3;
   border: 2px solid #1A272F;
   box-shadow: -5px 5px #dcd9d0;
 }
@@ -390,7 +390,7 @@ a:active {
   z-index: 9999;
   width: 100%;
   height: 78px;
-  background-color:#ffffff;
+  background-color:#FEFAF3;
 }
 
 .branding-navigation {
@@ -507,7 +507,7 @@ a:active {
 }
 
 .arrow-to-work {
-  width: 2.5rem;
+  width: 3rem;
 }
 
 /* Work Page Layout
@@ -1067,7 +1067,7 @@ a.sub-navigation-link:hover {
   }
 
   .arrow-to-work {
-    width: 3.5rem;
+    width: 4rem;
   }
 
   /* Grayscale filter with full-colour on hover and tap */
